@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>swaraj puppalwar</title>
 </head>
 <body>
@@ -32,7 +32,10 @@
     </div>
     <div class="work">
           <h1>&nbsp; &nbsp;/ &nbsp; &nbsp;MY WORK Experience</h1>
+          <p>THIS IS MY ALL WORK Experiencep AND MY GITHUB PROFILE,<br> GITHUB PROJECTS AND WEBSITES.</P>
           <img src="github.png">
+           <h1></h1>
+        </img>
         <img src="python.jfif">
         <img src="html.png">
         <img src="css.png">
@@ -42,14 +45,14 @@
         <img src="c++.png">
         <img src="api.png">
         <div class="s-u">
-        <img src="scroll-up.png">
+        <button onclick="su()"></button>
         </div>
         <button onclick = "f()"><span></span>GITHUB</button>
         <button onclick="f1()"><span></span>ALL PROJECTS GITHUB</button>
-        <h5>
+        <!-- <h5>
         &nbsp; &nbsp; / &nbsp; &nbsp; MY GITHUB PROFILE. &nbsp; &nbsp;"&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;".&nbsp; &nbsp; &nbsp; &nbsp;
         </h5>
-        <li><a href="https://github.com/UltronTheAI">GITHUB</a></li>
+        <li><a href="https://github.com/UltronTheAI">GITHUB</a></li> -->
     </div>
     <style>
        @keyframes apt-l
@@ -65,7 +68,7 @@
         }
         body
         {
-           overflow-y: auto;
+           width: 100%;
         }
         .main video
         {
@@ -78,6 +81,7 @@
             width: 1913px;
             height: 990px;
             background-color: black;
+            box-shadow: -30px 20px 20px;
         }
         .main h1
         {
@@ -87,12 +91,33 @@
             transform: translateY(-800px);
             left: 100px;
         }
+        .work
+         {
+             color: #fff;
+             text-align: center;
+             position: relative;
+             top: 0px;
+         }
+          .work p
+         {
+             color: #fff;
+             text-align: center;
+             position: relative;
+             top: 50px;
+         }
         .std
         {
             width: 1913px;
             height: 1100px;
-            background-color: #fff;
+            background: #161623;
+            color: #161623;
             transition: 5s;
+            box-shadow: -30px 20px 20px;
+        }
+        .std img
+        {
+            border: 0px solid #fff;
+            color: #161623;
         }
         .std :hover
         {
@@ -110,13 +135,28 @@ animation-name: apt-l;
         {
             position: relative;
             left: 800px;
+            box-shadow: -30px 20px 20px;
+            
+            
         }
         .work
         {
              width: 1913px;
-            height: 940px;
-            background-color: black;
+            height: 1100px;
+            background: #030303;
             transition: 5s;
+            box-shadow: -30px 20px 20px;
+        }
+        .work button
+        {
+            position: relative;
+            top: 100px;
+          transform: translateX(-750px);  
+        }
+        .s-u button
+        {
+            position: relative;
+            left: -1000px;
         }
         .work img
         {
@@ -126,45 +166,54 @@ animation-name: apt-l;
             top: 100px;
             left: 20px;
             border-radius: 25px;
-            border: 1px solid yellowgreen;
-            place-items: center;
-            align-items: center;
-            justify-content: space-between;
+            border: 0px solid yellowgreen;
+            color: yellowgreen;
+            box-shadow: -30px 20px 20px;
+            margin-right: 100px;
+            margin-top: 100px;
+            transition: 2s;
         }
+
         .work button
         {
             background: transparent;
             border-radius: 25px;
-            border: 1px solid yellowgreen;
+            border: 0px solid yellowgreen;
             color: #fff;
             width: 200px;
             height: 50px;
             position: relative;
-            top: 300px;
+            top: 50px;
             left: 750px;
             animation-name: iopp;
+            box-shadow: -30px 20px 20px;
             animation-iteration-count: infinite;
             animation-duration: 10s;
+            margin-right: 100px;
         }
-        .s-u img
+        .s-u button
         {
             border: 0px solid #fff;
             width: 100px;
+            height: 100px;
             position: relative;
-            transform: translateX(1600px);
-            top: 500px;
+            transform: translateX(800px);
+            background-image: url('scroll-up.png');
+            background-size: cover;
+            box-shadow: -30px 20px 20px;
+            top: 0px;
         }
         .work h5
         {
             color: blue;
             position: relative;
-            top: 500px;
+            top: 50px;
             font-size: 7ex;
         }
         .work li a
         {
             position: relative;
-            top: 359px;
+            top:-100px;
             left: 730px;
             font-size: 7ex;
         }
@@ -173,13 +222,18 @@ animation-name: apt-l;
             20%
             {
                 color: yellow;
-                border: 1px solid blue;
+                border: 0px solid blue;
             }
             80%
             {
                 color: red;
-                border: 1px solid pink;
+                border: 0px solid pink;
             }
+        }
+        .work img:hover
+        {
+            color: rgba(0, 132, 255, 0.329);
+            transform: rotateX(90deg);
         }
         .work span
         {
@@ -196,6 +250,7 @@ animation-name: apt-l;
         .work button:hover span
         {
             color: #fff;
+            background: #fff;
             width: 100%;
         }
         .work button:hover
@@ -229,10 +284,11 @@ animation-name: apt-l;
         .work h1
         {
             color: rgba(119, 0, 255, 0.904);
-            font-size: 3ex;
-            left: 200px;
+            font-size: 7ex;
+            text-align: center;
             position: relative;
             top: 50px;
+            text-decoration: wavy;
         }
     </style>
     <script>
@@ -243,6 +299,12 @@ animation-name: apt-l;
          function f1() {
                 window.open("https://github.com/UltronTheAI?tab=repositories");
             }
+    </script>
+    <script>
+        function su()
+        {
+            window.scrollBy(0, -2000);
+        }
     </script>
 </body>
 </html>
